@@ -1,77 +1,122 @@
-<!-- Credit 
-buatan : febrian
-contact: t.me/dev_michan
-tiktok : dev_michan
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FATIH</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Update FontAwesome ke versi terbaru -->
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>WEB FATIH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header-section">
-        <img src="https://files.catbox.moe/pl4og9.jpg" class="profile-img" alt="Profile">
-        <h1 class="header-text">FATZZ</h1>
+  <div class="form-container">
+    <div class="form-box" id="loginForm">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Username">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button onclick="login()">Masuk</button>
+      <p>Belum punya akun? <a href="#" onclick="showRegister()">Daftar di sini</a></p>
     </div>
 
-    <div class="japanese-text">WELCOME DI WEB FATZZ</div>
+    <div class="form-box" id="registerForm" style="display: none;">
+      <h2>Buat Akun</h2>
+      <input type="text" id="registerUsername" placeholder="Username">
+      <input type="password" id="registerPassword" placeholder="Password">
+      <button onclick="register()">Daftar</button>
+      <p>Sudah punya akun? <a href="#" onclick="showLogin()">Login di sini</a></p>
+    </div>
+  </div>
 
-    <div class="container">
-        <div class="tags">
-            <span class="tag"><i class="fas fa-search"></i> melayani</span>
-            <span class="tag"><i class="fas fa-leaf"></i> jasateb</span>
-            <span class="tag"><i class="fas fa-edit"></i> unchek</span>
-            <span class="tag"><i class="fas fa-paint-brush"></i> fatih ganteng</span>
-            <span class="tag"><i class="fas fa-gamepad"></i> jasateb gacor</span>
-            <span class="tag"><i class="fas fa-laugh"></i> unchek gacor</span>
-            <span class="tag"><i class="fas fa-music"></i> jual akun ff</span>
-            <span class="tag"><i class="fas fa-history"></i> dan lain lain</span>
-        </div>
-        
-        <div class="social">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-spotify"></i></a>
-            <a href="#"><i class="fab fa-discord"></i></a>
-        </div>
+  <div id="mainBody" style="display:none;">
+    <div class="header-section">
+      <img src="https://files.catbox.moe/pl4og9.jpg" class="profile-img" alt="Profile">
+      <h1 class="fatihganteng">owner fatih</h1>
+    </div>
+
+    <div class="sampul-teks">WELCOME DI WEB FATIH</div>
+
+    <div class="tags">
+      <span class="tag"><i class="fas fa-search"></i> melayani</span>
+      <span class="tag"><i class="fas fa-leaf"></i> jasateb</span>
+      <span class="tag"><i class="fas fa-edit"></i> unchek</span>
+      <span class="tag"><i class="fas fa-paint-brush"></i> fatih ganteng</span>
+      <span class="tag"><i class="fas fa-gamepad"></i> jasateb gacor</span>
+      <span class="tag"><i class="fas fa-laugh"></i> unchek gacor</span>
+      <span class="tag"><i class="fas fa-music"></i> jual akun ff</span>
+      <span class="tag"><i class="fas fa-history"></i> dan lain lain</span>
+    </div>
+
+    <div class="social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-spotify"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
     </div>
 
     <div class="download-section">
-        <a href="https://wa.me/6289692070017" 
-           class="download-btn"
-           target="_blank">
-            <img src="https://files.catbox.moe/5ttygh.jpg" class="download-icon" alt="WHATSAPP">
-            JOIN OWN/PT 
-        </a>
-
-        <a href="https://www.instagram.com/fatstore_69?igsh=ZnN2ZjdiN3I4MHc1" 
-           class="download-btn"
-           target="_blank">
-            <img src="https://files.catbox.moe/y3l7y6.jpg" class="download-icon" alt="WHATSAPP">
-            MY INSTAGRAM
-        </a>
-        
-        <a href="https://chat.whatsapp.com/DrCDKsP44Ag40ZdLgMi4sD" 
-           class="download-btn"
-           target="_blank">
-            <img src="https://files.catbox.moe/5ttygh.jpg" class="download-icon" alt="tiktok">
-            GROUP STOCK AKUN
-        </a>
-        <a href="https://whatsapp.com/channel/0029VauFpn5DeON0fWTRYk36" 
-           class="download-btn"
-           target="_blank">
-            <img src="https://files.catbox.moe/5ttygh.jpg" class="download-icon" alt="WHATSAPP">
-            CHANNEL FATZZ 
-        </a>
+      <a href="https://wa.me/6289692070017?text=bang%20mau%20join%20pt/own" class="download-btn" target="_blank">
+        <img src="https://files.catbox.moe/5ttygh.jpg" class="download-icon"> JOIN OWN/PT
+      </a>
+      <a href="https://www.instagram.com/fatstore_69?igsh=ZnN2ZjdiN3I4MHc1" class="download-btn" target="_blank">
+        <img src="https://files.catbox.moe/y3l7y6.jpg" class="download-icon"> MY INSTAGRAM
+      </a>
+      <a href="https://chat.whatsapp.com/DrCDKsP44Ag40ZdLgMi4sD" class="download-btn" target="_blank">
+        <img src="https://files.catbox.moe/5ttygh.jpg" class="download-icon"> GROUP STOCK AKUN
+      </a>
+      <a href="https://whatsapp.com/channel/0029VauFpn5DeON0fWTRYk36" class="download-btn" target="_blank">
+        <img src="https://files.catbox.moe/5ttygh.jpg" class="download-icon"> CHANNEL FATZZ
+      </a>
     </div>
-</body>
+
+    <audio autoplay muted loop controls>
+      <source src="https://files.catbox.moe/bbgwgy.mp3" type="audio/mpeg">
+    </audio>
+
     <footer class="website-footer">
-    ©DI BUAT OLEH FATIH 
-</footer>
-</html>
+      © 2025 DI BUAT OLEH FATIH
+    </footer>
+  </div>
+
+  <script>
+    let users = [];
+
+    function showRegister() {
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("registerForm").style.display = "block";
+    }
+
+    function showLogin() {
+      document.getElementById("registerForm").style.display = "none";
+      document.getElementById("loginForm").style.display = "block";
+    }
+
+    function register() {
+      const username = document.getElementById("registerUsername").value;
+      const password = document.getElementById("registerPassword").value;
+
+      if (username && password) {
+        users.push({ username, password });
+        alert("Akun berhasil dibuat!");
+        showLogin();
+      } else {
+        alert("Isi semua data!");
+      }
+    }
+
+    function login() {
+      const username = document.getElementById("loginUsername").value;
+      const password = document.getElementById("loginPassword").value;
+
+      const user = users.find(u => u.username === username && u.password === password);
+      if (user) {
+        document.querySelector(".form-container").style.display = "none";
+        document.getElementById("mainBody").style.display = "block";
+        const audio = document.querySelector("audio");
+        audio.muted = false;
+        audio.play();
+      } else {
+        alert("Login gagal! Username atau password salah.");
+      }
+    }
+  </script>
+</body>
+    </html>
